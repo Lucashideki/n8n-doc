@@ -15,7 +15,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: black;
+            background: rgb(224, 224, 224);
             min-height: 100vh;
         }
 
@@ -256,92 +256,149 @@
         }
     </style>
 </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Analista de Automação | Lucas Hideki</title>
+    <!-- MANTÉM O MESMO CSS QUE VOCÊ JÁ TEM -->
+    <!-- Adicione a fonte se quiser melhorar ainda mais: -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* TODO SEU CSS AQUI, exatamente como está no código anterior */
+    </style>
+</head>
+
 <body>
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <p><strong>Lucas Hideki Tobaro Barbeiro</strong> | Desenvolvedor de software</p>
-            <p>Especialista em automação de processos, integração de APIs e otimização de workflows empresariais</p>
+            <p><strong>Lucas Hideki Tobaro Barbeiro</strong> | Analista de Automação e Integração de Sistemas</p>
+            <p>Experiência em automação de processos com N8N, integração de APIs, orquestração de fluxos, e soluções com
+                Inteligência Artificial</p>
+        </div>
+
+        <!-- Principais Tecnologias -->
+        <div class="header" style="margin-top: 40px;">
+            <h2 style="margin-bottom: 20px;">Principais Tecnologias</h2>
+            <div class="workflow-tech" style="justify-content: center;">
+                <span class="tech-tag">N8N</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">API REST</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">RabbitMQ</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Google Cloud</span>
+            </div>
         </div>
 
         <!-- Workflows -->
         <div class="workflows">
-            <!-- Workflow 1: CRM Integration -->
+            <!-- Workflow 1 -->
             <div class="workflow-card">
                 <div class="workflow-title">
-                    IA Conversacional
+                    Assistente Virtual para Atendimento Automatizado
                 </div>
                 <div class="workflow-image">
-                    <img class="workflow-image" src="Screenshot_20241489.png"></img>
+                    <img class="workflow-image" src="Screenshot_20241489.png" alt="Assistente Virtual">
                 </div>
                 <div class="workflow-description">
-                    Assistente virtual no Whatsapp para agendamento/cancelamento/reagendamento de horário de forma autônoma.
+                    Solução de atendimento via WhatsApp, com inteligência artificial para agendamento, cancelamento e
+                    reagendamento de horários. Operação autônoma com fallback inteligente.
                 </div>
                 <div class="workflow-tech">
                     <span class="tech-tag">N8N</span>
                     <span class="tech-tag">RabbitMQ</span>
                     <span class="tech-tag">Redis</span>
-                    <span class="tech-tag">Postgres</span>
+                    <span class="tech-tag">PostgreSQL</span>
                     <span class="tech-tag">Javascript</span>
                     <span class="tech-tag">Evolution API</span>
                     <span class="tech-tag">OpenAI API</span>
                 </div>
             </div>
 
-            <!-- Workflow 2: AI Automation -->
+            <!-- Workflow 2 -->
             <div class="workflow-card">
                 <div class="workflow-title">
-                    IA Conversacional
+                    Integração de Documentos para Base de Conhecimento
                 </div>
                 <div class="workflow-image">
-                    <img class="workflow-image" src="Screenshot_20241491.png"></img>
+                    <img class="workflow-image" src="Screenshot_20241491.png" alt="Integração de documentos">
                 </div>
                 <div class="workflow-description">
-                    Usando python com a biblioteca Docling, PDF com conteúdos internos são transformando em Markdown, e de documentos "mortos" se transformam em conhecimento vivo para a IA.
+                    PDFs internos são processados via Python e Docling, convertidos para Markdown e organizados em um
+                    vetor semântico para consulta via IA. Transformação de conteúdo estático em conhecimento
+                    consultável.
                 </div>
                 <div class="workflow-tech">
                     <span class="tech-tag">N8N</span>
                     <span class="tech-tag">OpenAI API</span>
-                    <span class="tech-tag">Python com Docling</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Docling</span>
                     <span class="tech-tag">Google Drive</span>
                     <span class="tech-tag">Pinecone</span>
                 </div>
             </div>
 
-            <!-- Workflow 3: Data Processing -->
+            <!-- Workflow 3 -->
             <div class="workflow-card">
                 <div class="workflow-title">
-                    Rotina em python
+                    Monitoramento de Instância via API
                 </div>
                 <div class="workflow-description">
-                   Usando o endpoint "/instance/connectionState/[nome_da_instancia]", é feito um GET para monitorar o estado atual da instancia. Integrado com o Telegram para caso a instancia esteja como "close", é enviado uma notificação.
+                    Script em Python monitora o estado da instância via API REST. Quando o estado é alterado para
+                    "close", uma notificação é automaticamente enviada via Telegram.
                 </div>
                 <div class="workflow-tech">
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Telegram</span>
+                    <span class="tech-tag">Telegram API</span>
                 </div>
             </div>
 
-            <!-- Workflow 4: E-commerce -->
+            <!-- Workflow 4 -->
             <div class="workflow-card">
                 <div class="workflow-title">
-                    Call Human
+                    Escalonamento Inteligente: Call Human
                 </div>
                 <div class="workflow-image">
-                    <img class="workflow-image" src="Screenshot_20241496.png"></img>
+                    <img class="workflow-image" src="Screenshot_20241496.png" alt="Call Human">
                 </div>
                 <div class="workflow-description">
-                   Tool criada para quando o cliente quer saber de uma informação na qual a IA não tem acesso, as vezes por regra de negócio ou até pela complexidade.<br>
-                - Recupera o histórico da conversa;<br>
-                - Usa um modelo da OpenAI para gerar um resumo em bullet points dos últimos pontos relevantes;<br>
-                - Envia esse resumo para o atendente com o número de contato, agilizando o atendimento e evitando que o humano “comece
-                do zero”.
+                    Quando a IA não consegue resolver uma solicitação, a ferramenta gera um resumo com os últimos
+                    tópicos relevantes da conversa utilizando a OpenAI. Esse resumo é enviado ao atendente humano com os
+                    dados de contato do cliente, garantindo transição fluida e produtiva.
                 </div>
                 <div class="workflow-tech">
                     <span class="tech-tag">N8N</span>
-                    <span class="tech-tag">WooCommerce</span>
+                    <span class="tech-tag">OpenAI</span>
+                    <span class="tech-tag">WhatsApp API</span>
                     <span class="tech-tag">ERP Integration</span>
                     <span class="tech-tag">Email Marketing</span>
-                    <span class="tech-tag">WhatsApp API</span>
                 </div>
             </div>
+        </div>
+
+        <!-- Contato Profissional -->
+        <div class="contact-section">
+            <h2>Contato Profissional</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    📧 <a href="mailto:lucashidekitb@gmail.com">lucashidekitb@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    💼 <a href="https://www.linkedin.com/in/lucas-hideki-tb/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    📍 São Paulo, SP - Brasil
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
